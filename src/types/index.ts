@@ -7,8 +7,9 @@ export type Method = 'get' | 'GET'
   | 'patch' | 'PATCH'
 
 export interface RequestConfig {
-  url: string,
-  method?: Method,
-  data?: any,
+  url: string
+  method?: Method
+  data?: any
   params?: any
+  headers?: any
 }
