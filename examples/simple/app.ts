@@ -8,3 +8,16 @@ axios({
     b: 2
   }
 })
+
+axios({
+  method: 'post',
+  url: '/bast/post',
+  headers: {
+    'content-type': 'application/json',
+    'Accept': 'application/json, text/plain, */*'
+  },
+  data: {
+    a: 1,
+    b: 2
+  }
+})
