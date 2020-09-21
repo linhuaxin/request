@@ -1,4 +1,4 @@
-import axios from '../../src/index'
+import dispatchRequest from '../../src/index'
 
 // axios({
 //   method: 'get',
@@ -100,7 +100,7 @@ import axios from '../../src/index'
 //   data: searchParams
 // })
 
-axios({
+dispatchRequest({
   method: 'post',
   url: '/base/post',
   data: {
@@ -111,7 +111,7 @@ axios({
   console.log(res)
 })
 
-axios({
+dispatchRequest({
   method: 'post',
   url: '/base/post',
   responseType: 'json',
