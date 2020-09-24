@@ -129,7 +129,6 @@ export interface CancelTokenStatic {
 
 export interface Cancel {
   message?: string
-  name?: string
 }
 
 export interface CancelStatic {
