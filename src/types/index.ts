@@ -25,6 +25,7 @@ export interface AxiosRequestConfig {
   transformRequest?: AxiosTransformer | AxiosTransformer[]
   transformResponse?: AxiosTransformer | AxiosTransformer[]
   cancelToken?: CancelToken
+  withCredentials?: boolean
 }
 
 export interface AxiosResponse<T = any> {
@@ -78,7 +79,6 @@ export interface AxiosInstance extends Axios {
 
 export interface AxiosStatic extends AxiosInstance {
   CancelToken: CancelTokenStatic
-  Cancel: CancelStatic
   isCancel: (value: any) => boolean
 
   create(config?: AxiosRequestConfig): AxiosInstance

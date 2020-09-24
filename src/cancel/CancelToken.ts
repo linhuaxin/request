@@ -36,9 +36,6 @@ export default class CancelToken {
     const token = new CancelToken(c => {
       cancel = c
     })
-    return {
-      cancel,
-      token
-    }
+    return { cancel, token }
   }
 }

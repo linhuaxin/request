@@ -21,19 +21,18 @@ setTimeout(() => {
   })
 }, 100)
 
-// let cancel: Canceler
-//
-// axios.get('/cancel/get', {
-//   cancelToken: new CancelToken(c => {
-//     cancel = c
-//   })
-// }).catch(function(e) {
-//   debugger
-//   if (axios.isCancel(e)) {
-//     console.log('Request canceled')
-//   }
-// })
-//
-// setTimeout(() => {
-//   cancel()
-// }, 200)
+let cancel: Canceler
+
+axios.get('/cancel/get', {
+  cancelToken: new CancelToken(c => {
+    cancel = c
+  })
+}).catch(function(e) {
+  if (axios.isCancel(e)) {
+    console.log('Request canceled')
+  }
+})
+
+setTimeout(() => {
+  cancel()
+}, 200)
