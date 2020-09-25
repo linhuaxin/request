@@ -1,11 +1,11 @@
 {
-  "name": "star-request",
+  "name": "zerone-axios",
   "version": "0.1.5",
   "description": "",
   "keywords": [],
-  "main": "dist/star-request.umd.js",
-  "module": "dist/star-request.es5.js",
-  "typings": "dist/types/star-request.d.ts",
+  "main": "dist/zerone-axios.umd.js",
+  "module": "dist/zerone-axios.es5.js",
+  "typings": "dist/types/zerone-axios.d.ts",
   "files": [
     "dist"
   ],
