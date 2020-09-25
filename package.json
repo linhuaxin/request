@@ -1,11 +1,11 @@
 {
-  "name": "zerone-axios",
-  "version": "1.0.1",
+  "name": "zero-ajax",
+  "version": "1.0.2",
   "description": "",
   "keywords": [],
-  "main": "dist/zerone-axios.umd.js",
-  "module": "dist/zerone-axios.es5.js",
-  "typings": "dist/types/zerone-axios.d.ts",
+  "main": "dist/zero-ajax.umd.js",
+  "module": "dist/zero-ajax.es5.js",
+  "typings": "dist/types/zero-ajax.d.ts",
   "files": [
     "dist"
   ],

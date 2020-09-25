@@ -7,7 +7,7 @@ import json from 'rollup-plugin-json'
 
 const pkg = require('./package.json')
 
-const libraryName = 'zerone-axios'
+const libraryName = 'zero-ajax'
 
 export default {
   input: `src/index.ts`,
