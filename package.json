@@ -1,11 +1,11 @@
 {
-  "name": "zero-ajax",
-  "version": "1.0.2",
+  "name": "star-request",
+  "version": "0.0.2",
   "description": "",
   "keywords": [],
-  "main": "dist/zero-ajax.umd.js",
-  "module": "dist/zero-ajax.es5.js",
-  "typings": "dist/types/zero-ajax.d.ts",
+  "main": "dist/star-request.umd.js",
+  "module": "dist/star-request.es5.js",
+  "typings": "dist/types/star-request.d.ts",
   "files": [
     "dist"
   ],
