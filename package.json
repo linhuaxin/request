@@ -3,9 +3,9 @@
   "version": "0.2.1",
   "description": "",
   "keywords": [],
-  "main": "dist/zerone-axios.umd.js",
-  "module": "dist/zerone-axios.es5.js",
-  "typings": "dist/types/zerone-axios.d.ts",
+  "main": "dist/axios.umd.js",
+  "module": "dist/axios.es5.js",
+  "typings": "dist/types/axios.d.ts",
   "files": [
     "dist"
   ],
