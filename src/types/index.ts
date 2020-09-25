@@ -34,6 +34,7 @@ export interface AxiosRequestConfig {
   validateStatus?: (status: number) => boolean
   paramsSerializer?: (params: any) => string
   baseURL?: string
+  [propName: string]: any
 }
 
 export interface AxiosResponse<T = any> {
@@ -94,6 +95,7 @@ export interface AxiosClassStatic {
 export interface AxiosStatic extends AxiosInstance {
   CancelToken: CancelTokenStatic
   isCancel: (value: any) => boolean
+  Cancel: CancelStatic
 
   create(config?: AxiosRequestConfig): AxiosInstance
 

@@ -11,7 +11,7 @@ export default function xhr(config: AxiosRequestConfig): AxiosPromise {
       method = 'get',
       url,
       data = null,
-      headers,
+      headers = {},
       responseType,
       timeout,
       cancelToken,
@@ -100,6 +100,10 @@ export default function xhr(config: AxiosRequestConfig): AxiosPromise {
       if (isFormData(data)) {
         delete headers['Content-Type']
       }
+
+      console.log('withCredentials: ' + withCredentials)
+      console.log('isURLSameOrigin: ' + isURLSameOrigin(url!))
+      console.log('xsrfCookieName: ' + xsrfCookieName)
 
       if ((withCredentials || isURLSameOrigin(url!)) && xsrfCookieName) {
         const xsrfValue = cookie.read(xsrfCookieName)
